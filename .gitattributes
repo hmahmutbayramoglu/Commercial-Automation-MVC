@@ -1,3 +1,2 @@
-* linguist-vendored
-*.csharp linguist-detectable=true
+ *.* linguist-language=C#
 
