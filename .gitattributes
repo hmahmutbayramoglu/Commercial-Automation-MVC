@@ -1,6 +1,6 @@
 
 
-*.asp linguist-detectable=true
+*.ASP.NET linguist-detectable=true
 *.java linguist-detectable=false
 *.js linguist-detectable=false
 *.html linguist-detectable=false
