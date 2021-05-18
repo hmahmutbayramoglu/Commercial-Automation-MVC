@@ -1,0 +1,30 @@
+﻿@model CommercialAutomation.Models.Classes.Category
+@{
+    ViewBag.Title = "CategoryDetails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+
+    <h2>Kategori Detayları</h2>
+    <br />
+
+    @using (Html.BeginForm("Update", "Category", FormMethod.Post))
+    {
+
+
+        <form>
+            <div class="form-group">
+
+                <label for="formGroupExampleInput">@Html.LabelFor(c => c.Name)</label>
+                @Html.TextBoxFor(c => c.Name, new { @class = "form-control" })
+                @Html.HiddenFor(c=>c.Id)
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Güncelle</button>
+            </div>
+        </form>
+
+
+    }
+</div>

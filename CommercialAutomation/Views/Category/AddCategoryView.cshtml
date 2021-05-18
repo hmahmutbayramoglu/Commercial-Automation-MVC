@@ -1,0 +1,22 @@
+﻿@model CommercialAutomation.Models.Classes.Category
+@{
+    ViewBag.Title = "AddCategoryView";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <h2>Kategori İşlemleri</h2>
+
+    <form class="form-group container" method="post">
+        @Html.LabelFor(c => c.Name)
+        @Html.TextBoxFor(c => c.Name, new { @class = "form-control" })
+
+
+        <hr />
+        <button class="btn btn-primary">Kaydet</button>
+ 
+    </form>
+
+</div>
+
+
